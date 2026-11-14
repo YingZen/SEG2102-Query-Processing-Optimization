@@ -1,6 +1,8 @@
 # SEG2102 Query Processing and Optimization — reproducibility package
 
-This package accompanies the IEEE-style report. The report uses 20 genuine research papers, an explicitly labeled analytical data-access model, and attributed external empirical results. **No first-hand MongoDB benchmark has been run in the report-building environment.** These files let the group perform the missing actual measurements.
+This package accompanies the IEEE-style report. The report uses 20 genuine research papers, an explicitly labeled analytical data-access model, and attributed external empirical results. **The MongoDB query optimization experiments were conducted locally using MongoDB Server 9.0.8 and MongoDB Shell 2.14.2. The evaluation included datasets containing 10,000, 50,000, and 100,000 documents, using unindexed, single-field indexed, and compound-indexed query configurations.
+
+Four query workloads were evaluated, producing 36 experimental configurations. The repository includes the benchmark implementation, raw experimental results, summarized performance measurements, and visualization graphs to support reproducibility.** These files let the group perform the missing actual measurements.
 
 ## Setup
 1. Install MongoDB Community Server and MongoDB Shell (`mongosh`) on a machine you control.
